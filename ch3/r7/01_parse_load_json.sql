@@ -1,7 +1,7 @@
 CREATE DATABASE NDJSON_EX;
 
 -- create a stage pointing to the S3 bucket containing our example file
-CREATE OR REPLACE STAGE NDJSON_STG url='s3://snowflake-cookbook/ch4/r8'
+CREATE OR REPLACE STAGE NDJSON_STG url='s3://snowflake-cookbook/ch3/r7'
 FILE_FORMAT = (TYPE = JSON, STRIP_OUTER_ARRAY = TRUE);
 
 -- list & validate that you can see the json file
