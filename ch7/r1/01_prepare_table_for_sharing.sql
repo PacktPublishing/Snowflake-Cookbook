@@ -1,4 +1,3 @@
--- create the share object to which we will then add data to be shared. 
 CREATE DATABASE C7_R1;
 
 -- creation of a table which will hold the transaction data.
