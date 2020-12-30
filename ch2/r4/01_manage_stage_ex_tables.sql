@@ -1,6 +1,6 @@
 -- create a stage
 create or replace stage sfuser_ext_stage
-url='s3://snowflake-cookbook/';
+url='s3://snowflake-cookbook/ch2/r4/';
 
 -- list the files in the stage
 list@SFUSER_EXT_STAGE;
@@ -17,7 +17,7 @@ select * from ext_tbl_userdata1;
 
 -- create external table with CSV data
 create or replace external table ext_card_data
-with location = @sfuser_ext_stage/ch2/r4/csv
+with location = @sfuser_ext_stage/csv
 file_format = (type = csv)
 pattern = '.*headless[.]csv';
 
