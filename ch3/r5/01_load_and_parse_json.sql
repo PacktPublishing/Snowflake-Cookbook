@@ -2,7 +2,7 @@ CREATE DATABASE JSON_EX;
 
 -- create external stage pointing to 
 -- the public bucket where we have palced a sample JSON file
-CREATE OR REPLACE STAGE JSON_STG url='s3://snowflake-cookbook/ch3/r6'
+CREATE OR REPLACE STAGE JSON_STG url='s3://snowflake-cookbook/ch3/r5'
 FILE_FORMAT = (TYPE = JSON);
 
 -- validate that you can access the bucket

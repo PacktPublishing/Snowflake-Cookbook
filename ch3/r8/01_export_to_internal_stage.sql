@@ -12,3 +12,5 @@ FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.CUSTOMER;
 --Validate files are extracted 
 LIST @EXPORT_INTERNAL_STG;
  
+--Use SnowSQL to download the files to a local directory
+GET @EXPORT_INTERNAL_STG 'file://C:/Downloads/';
