@@ -1,0 +1,28 @@
+--run the following commands on command line or the terminal.
+spark-shell --version
+
+--start up the spark-shell with the -packages command to load the correct connector.  To do so run the following on the command line.
+spark-shell --packages net.snowflake:spark-snowflake_2.12:2.8.3-spark_3.0
+
+--create a new text file called test_sf_connect.scala and paste the following code in that file. Please make sure that you replace the placeholders in the following code with the information pertaining to your account.
+val SNOWFLAKE_SOURCE_NAME = "net.snowflake.spark.snowflake"
+
+// initialise the connectivity related variables
+var snowflakeOptions = Map(
+    "sfURL" -> "<replace_with_your_account_url>",
+    "sfUser" -> "<replace_with_a_user_name>",
+    "sfPassword" -> "<replace_with_password>",
+    "sfDatabase" -> "SNOWFLAKE_SAMPLE_DATA",
+    "sfSchema" -> "TPCH_SF1",
+    "sfWarehouse" -> "<replace_with_the_virtual_warehouse>"
+)
+
+//read and output a table
+spark.read
+    .format(SNOWFLAKE_SOURCE_NAME)
+    .options(snowflakeOptions)
+    .option("dbtable", "REGION")
+    .load().show()
+
+--start the spark-shell (if not already running) using the command provided in Step 3 of this section and once the spark-shell is ready issue the following command. This command will load the script in the given file and execute it.
+:load test_sf_connect.scala
