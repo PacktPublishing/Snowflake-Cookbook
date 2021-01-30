@@ -36,7 +36,7 @@ FROM TABLE(GENERATOR(ROWCOUNT => 1000));
 
 -- create a seprate database which will contain a view that joins 
 -- the customer & the customer address table
-CREATE DATABASE VIEW_DB;
+CREATE DATABASE VIEW_SHR_DB;
 
 -- create a view joining customer and customer address table
 -- notice the view has to be created as a Secure View since

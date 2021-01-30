@@ -1,3 +1,4 @@
+USE ROLE ACCOUNTADMIN;
 USE C7_R3;
 -- creation of another table which will hold the customer address data.
 CREATE TABLE CUSTOMER_ADDRESS

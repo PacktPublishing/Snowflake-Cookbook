@@ -31,7 +31,7 @@ GRANT SELECT ON ALL TABLES IN SCHEMA C7_R3.public TO SHARE share_cust_database;
 -- to find the consumer_account_number look at the URL of the snowflake
 -- instance of the consumer. So if the URL is https://drb98231.us-east-1.snowflakecomputing.com/console#/internal/worksheet
 -- the consumer account_number is drb98231
-ALTER SHARE share_cust_database ADD ACCOUNT=consumer_account_number_here;
+ALTER SHARE share_cust_database ADD ACCOUNT=<consumer_account_name_here>;
 
 -- describe the share to see what is contained in the share
 DESC SHARE share_cust_database;

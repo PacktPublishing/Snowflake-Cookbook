@@ -15,4 +15,4 @@ GRANT SELECT ON TABLE C7_R1.public.transactions TO SHARE share_trx_data;
 -- to find the consumer_account_number look at the URL of the snowflake
 -- instance of the consumer. So if the URL is https://drb98231.us-east-1.snowflakecomputing.com/console#/internal/worksheet
 -- the consumer account_number is drb98231
-ALTER SHARE share_trx_data ADD ACCOUNT=consumer_number_here;
+ALTER SHARE share_trx_data ADD ACCOUNT=<consumer_account_name_here>;
