@@ -1,4 +1,4 @@
-CREATE DATABASE C6_R6;
+CREATE DATABASE C6_R1;
 
 -- create the table where the data will be loaded
 CREATE TABLE CUSTOMER
