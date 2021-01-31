@@ -5,7 +5,8 @@ USE ROLE SECURITYADMIN;
 
 CREATE USER second_account_admin 
 PASSWORD = 'password123' 
-EMAIL = 'john@doe.com';
+EMAIL = 'john@doe.com'
+MUST_CHANGE_PASSWORD = TRUE;
  
 --grant the ACCOUNTADMIN role to the newly created user. 
 GRANT ROLE ACCOUNTADMIN TO USER second_account_admin; 

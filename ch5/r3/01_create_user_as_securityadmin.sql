@@ -4,7 +4,7 @@ CREATE DATABASE test_database;
  
 --Create a new user which we will call user_operations1.
 USE ROLE SECURITYADMIN;
-CREATE USER user_operations1 PASSWORD='password123';
+CREATE USER user_operations1 PASSWORD='password123' MUST_CHANGE_PASSWORD = TRUE;
  
 --grant the USERADMIN role to this user and will make it their default role.
 USE ROLE SECURITYADMIN;

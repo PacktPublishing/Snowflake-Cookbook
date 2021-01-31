@@ -12,4 +12,4 @@ NAME STRING);
 USE ROLE SECURITYADMIN;
 
 --create a new user which we will use to demonstrate the role privileges. 
-CREATE USER dev_dba_user1 PASSWORD='password123';
+CREATE USER dev_dba_user1 PASSWORD='password123' MUST_CHANGE_PASSWORD = TRUE;
