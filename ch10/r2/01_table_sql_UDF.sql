@@ -60,7 +60,7 @@ $$
 $$;
 
 --it is important to understand that we have created two functions here. One function called CustomerOrders that does not take any parameter and another with the same name that accepts the name as a parameter. To demonstrate this run the following SQL.
-SHOW FUNCTIONS LIKE '%CustomerOrders%;
+SHOW FUNCTIONS LIKE '%CustomerOrders%';
 
 
 --Let us now call the new function by passing in a customer name as a paramter.

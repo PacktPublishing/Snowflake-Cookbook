@@ -1,5 +1,5 @@
 --start by creating a database, in which we will create our JavaScript based scalar UDFs.
-CREATE DATABASE C10_R2;
+CREATE DATABASE C10_R3;
 
 --create a very simple UDF that squares the value that is provided as the input. we must capitalize the parameter name when used in the function definition. This can be seen in the code below, where the input parameter val was used in the uppercase and used as VAL.
 CREATE FUNCTION square(val float)
@@ -8,10 +8,10 @@ LANGUAGE JAVASCRIPT
 AS
   'return VAL * VAL;'
 ;
-.
+
 --test this function by calling it in a SELECT statement
 SELECT square(5);
-The statement will output the value 25 as expected. 
+--The statement will output the value 25 as expected. 
 
 --create a recursive JavaScript UDF. We will be creating a simple factorial function which will recursively call itself to calculate factorial of the input value.
 CREATE FUNCTION factorial(val float)

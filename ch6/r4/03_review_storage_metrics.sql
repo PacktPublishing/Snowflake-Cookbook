@@ -1,6 +1,7 @@
 -- list the storage metrics and view the active bytes, time travel bytes etc.
 USE ROLE ACCOUNTADMIN;
-SELECT * FROM C6_R4.INFORMATION_SCHEMA.TABLE_STORAGE_METRICS;
+SELECT * FROM C6_R4.INFORMATION_SCHEMA.TABLE_STORAGE_METRICS
+WHERE TABLE_CATALOG='C6_R4';
 
 -- recreate the interim processing table by using the TRANSIENT keyword
 --which will ensure that the table does not store time travel data or failsafe data
