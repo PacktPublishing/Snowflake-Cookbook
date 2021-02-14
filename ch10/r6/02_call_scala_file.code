@@ -1,0 +1,2 @@
+//run spark-shell and run the following command.
+:load snowflake_transform.scala
