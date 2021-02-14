@@ -1,0 +1,2 @@
+//run spark-shell and run the following command.
+:load test_sf_connect.scala
