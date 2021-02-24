@@ -16,7 +16,7 @@ This book covers the following exciting features:
 * Transfer skills from on-premise data warehousing to the Snowflake cloud analytics platform
 * Optimize performance and costs associated with a Snowflake solution
 * Stage data on object stores and load it into Snowflake
-* If you feel this book is for you, get your [copy](https://www.amazon.com/dp/10DigitISBN) today!
+* If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1800560613) today!
 
 <a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
 alt="https://www.packtpub.com/" border="5" /></a>
