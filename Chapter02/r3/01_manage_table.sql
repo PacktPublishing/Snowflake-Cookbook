@@ -60,4 +60,4 @@ customers_shallow_copy;
 CREATE TEMPORARY TABLE customers_temp AS SELECT * FROM customers WHERE TRY_TO_NUMBER(postal_code) IS NOT NULL;
 
 -- create a transient table
-CREATE TRANSIENT TABLE customers_trans AS AS SELECT * FROM customers WHERE TRY_TO_NUMBER(postal_code) IS NULL;
+CREATE TRANSIENT TABLE customers_trans AS SELECT * FROM customers WHERE TRY_TO_NUMBER(postal_code) IS NULL;
