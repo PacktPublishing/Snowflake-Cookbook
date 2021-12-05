@@ -68,7 +68,7 @@ SELECT name, state,
         error_code, error_message
         
 FROM TABLE(information_schema.task_history())
-WHERE name IN ('CLEAR_ORDERING_CUSTOMERS','RELOAD_ORDERING_CUSTOMERS');
+WHERE name IN ('CLEAR_ORDERING_CUSTOMERS','INSERT_ORDERING_CUSTOMERS');
  
 --After 10 minutes, re-run the preceding query
  
