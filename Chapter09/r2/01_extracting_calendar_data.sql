@@ -46,10 +46,9 @@ SELECT (to_date('2021-01-01') + seq4()) cal_dt
            11, 'November',
            12, 'December') as cal_month_name
 FROM TABLE(GENERATOR(ROWCOUNT => 365));
-. 
+
  
 --add a column to our dataset that captures the end of the quarter against each date. We would be using the DATE_TRUNC function passed with ‘quarter’ parameter to manage this. The process is similar to the used for arriving at the end of the month for each month. The following code shows the new column CAL_QTR_END_DT which represents the last date of the quarter.
-
 SELECT (to_date('2021-01-01') + seq4()) cal_dt
 ,DATE_PART(day, cal_dt) as cal_dom --day of month
 ,DATE_PART(month, cal_dt) as cal_month --month of year
@@ -74,5 +73,4 @@ SELECT (to_date('2021-01-01') + seq4()) cal_dt
 ,DATEADD('day', -1,
   DATEADD('month', 3,
   DATE_TRUNC('quarter', CAL_DT))) as CAL_QTR_END_DT
-
 FROM TABLE(GENERATOR(ROWCOUNT => 365));
