@@ -27,7 +27,7 @@ SELECT * FROM sensitive_data.PUBLIC.SALARY;
  
 --only way to access this data now is to add specific user(s) to the HR_ROLE. We will now create a new user and add that user to the HR_ROLE.
 USE ROLE SECURITYADMIN;
-CREATE USER hr_user1 PASSWORD='password123';
+CREATE USER hr_user1 PASSWORD = 'password123' MUST_CHANGE_PASSWORD = TRUE;
 GRANT ROLE HR_ROLE to USER hr_user1;
 
 --Let us now login as the hr_user1 and see if we can access the salary data.
