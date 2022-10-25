@@ -63,3 +63,7 @@ is an experienced data architect with more than a decade of experience in the in
 He has worked with a leading data warehouse vendor for a decade as part of a professional services organization, advising customers in telco, retail, life sciences, and financial industries located in Asia, Europe, and Australia during presales and post-sales implementation cycles.
 Hammad holds an MSc. in computer science and has published conference papers in the domains of machine learning, sensor networks, software engineering, and remote sensing.
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781800560611">https://packt.link/free-ebook/9781800560611 </a> </p>
