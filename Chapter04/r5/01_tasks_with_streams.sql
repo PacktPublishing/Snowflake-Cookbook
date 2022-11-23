@@ -39,7 +39,7 @@ WHERE metadata$action = 'INSERT';
 
 --Please note that to RESUME a task you will need to run the command as ACCOUTNADMIN or another role with the appropriate privilege. 
 ALTER TASK process_new_customers 
-SET SCHEDULE = '10 MINUTE'; 
+SET SCHEDULE = '5 MINUTE'; 
 ALTER TASK process_new_customers RESUME;
  
 --validate that the target table i.e. customer is empty.
